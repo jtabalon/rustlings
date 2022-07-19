@@ -8,6 +8,19 @@ pub fn bigger(a: i32, b: i32) -> i32 {
     // Do not use:
     // - another function call
     // - additional variables
+
+    if a < b {
+        b
+    }
+
+    else {
+        a
+    }
+}
+
+fn main() {
+    let test_val = bigger(10, 8);
+    println!("This num is bigger {}", test_val);
 }
 
 // Don't mind this for now :)
