@@ -17,7 +17,7 @@ fn string(arg: String) {
 
 fn main() {
     string_slice("blue");
-    // ???("red".to_string());
+    string("red".to_string());
     // ???(String::from("hi"));
     // ???("rust is fun!".to_owned());
     // ???("nice weather".into());
