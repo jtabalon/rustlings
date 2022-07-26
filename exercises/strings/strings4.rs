@@ -22,7 +22,7 @@ fn main() {
     string("rust is fun!".to_owned());
     string("nice weather".into());
     string(format!("Interpolation {}", "Station"));
-    // ???(&String::from("abc")[0..1]);
+    string_slice(&String::from("abc")[0..1]);
     // ???("  hello there ".trim());
     // ???("Happy Monday!".to_string().replace("Mon", "Tues"));
     // ???("mY sHiFt KeY iS sTiCkY".to_lowercase());
