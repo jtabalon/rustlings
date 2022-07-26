@@ -21,7 +21,7 @@ fn main() {
     string(String::from("hi"));
     string("rust is fun!".to_owned());
     string("nice weather".into());
-    // ???(format!("Interpolation {}", "Station"));
+    string(format!("Interpolation {}", "Station"));
     // ???(&String::from("abc")[0..1]);
     // ???("  hello there ".trim());
     // ???("Happy Monday!".to_string().replace("Mon", "Tues"));
