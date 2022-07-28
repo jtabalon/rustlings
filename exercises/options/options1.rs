@@ -14,7 +14,12 @@ fn print_number(maybe_number: Option<u16>) {
 // TODO: Return an Option!
 fn maybe_icecream(time_of_day: u16) -> Option<u16> {
     // We use the 24-hour system here, so 10PM is a value of 22
-    ???
+    if time_of_day >= 22 {
+        None
+    }
+    else {
+        Some(5)
+    }
 }
 
 #[cfg(test)]
@@ -31,7 +36,7 @@ mod tests {
     #[test]
     fn raw_value() {
         // TODO: Fix this test. How do you get at the value contained in the Option?
-        let icecreams = maybe_icecream(12);
+        let icecreams = maybe_icecream(12).unwrap();
         assert_eq!(icecreams, 5);
     }
 }
