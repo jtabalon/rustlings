@@ -1,7 +1,6 @@
 // options1.rs
 // Execute `rustlings hint options1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 
 // you can modify anything EXCEPT for this function's signature
 fn print_number(maybe_number: Option<u16>) {
